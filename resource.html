@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resource</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    IaMe: Only be yourself
+</header>
+<div class="nav">
+    <a href="index.html">Homepage</a>
+    <a href="history.html">History</a>
+    <a href="resource.html">Resource</a>
+</div>
+<div class="content">
+    <div class="resource_banner">
+        <div class="resource_banner_left">
+            Empowerment & Confidence-Building <br> Tips
+        </div>
+        <div class="resource_banner_right"><img src="images/9.png"/></div>
+    </div>
+    <div class="resource_text">
+        <div class="title">Girls！</div>
+        <p>
+            True confidence comes from embracing who you are, not from conforming to external standards of beauty. There
+            is no single definition of what it means to be pretty. Your uniqueness is your strength, and it's essential
+            to celebrate it. The diversity in appearances and body shapes is what makes each of us special and beautiful
+            in our own way. If you ever feel the desire to change something about yourself, it's crucial to approach it
+            through healthy and safe methods. Prioritize your well-being above all. Embrace practices that nurture your
+            body, mind, and soul, and always consult with professionals if you're considering significant changes. Most
+            importantly, remember that your worth is not determined by your appearance. You are valuable, capable, and
+            deserving of respect and love, exactly as you are. Strive for personal growth and health, but never lose
+            sight of the beautiful person you already are.
+        </p>
+        <div class="title" style="margin-top: 40px">Reveal those fake internet bubbles.</div>
+        <p>
+            The phenomenon of "fake internet bubbles," where influencers or celebrities appear to maintain their beauty
+            or fitness effortlessly, often conceals the reality of surgeries, cosmetic procedures, strict diets, intense
+            workout regimes, or even digital editing and filters. Here are some key aspects to consider in this context:
+        </p>
+        <div class="ol_text">
+            <ol>
+                <li>Cosmetic Procedures and Surgeries: Many influencers and celebrities undergo cosmetic procedures or
+                    surgeries to enhance their appearance. These can range from minor treatments like Botox or fillers
+                    to more significant surgeries like liposuction or breast augmentation. However, these procedures are
+                    often not disclosed, leading followers to believe that their looks are entirely natural.
+                </li>
+
+                <li>
+                    Digital Editing and Filters: The use of photo editing apps and filters to alter appearance is
+                    widespread on social media. These tools can change body shape, skin texture, and even facial
+                    features, creating an illusion of perfection that is not achievable in real life.
+                </li>
+                <li>
+                    Strict Diets and Workout Regimes: Maintaining a certain body type often requires strict dieting
+                    and rigorous exercise routines, which may not be sustainable or healthy for most people. Influencers
+                    sometimes share only the end result of these efforts, not the challenging process behind them.
+                </li>
+                <li>
+                    Selective Sharing: Influencers often curate what they share on social media, choosing only the
+                    most flattering images and moments. This selective sharing can create a distorted view of their
+                    lives, where everything seems perfect and effortless.
+                </li>
+                <li>
+                    Sponsorship and Financial Means: Some influencers have the financial means or sponsorships to
+                    access high-end beauty treatments, personal trainers, nutritionists, and stylists, which greatly
+                    contribute to their appearance. These resources are not available to the average person.
+                </li>
+                <li>
+                    Pressure to Conform: The beauty standards perpetuated by these online personas can create immense
+                    pressure, especially among young girls and women, to conform to unrealistic ideals. This can lead to
+                    body dissatisfaction, low self-esteem, and unhealthy behaviors.
+                </li>
+            </ol>
+        </div>
+        <div class="img6"><img src="images/img6.webp"/></div>
+        <div class="title">Confidence Building Tips</div>
+        <p>
+            <div class="ol_text">
+            <ol>
+                <li>Practice Self-Acceptance: Start by accepting yourself as you are. Recognize and appreciate your body for its strength and capabilities. Remember, every body type is unique and worthy of respect.
+                </li>
+
+                <li>
+                    Challenge Negative Thoughts: When negative thoughts about your body or appearance arise, challenge them. Ask yourself if these thoughts are helpful or based on unrealistic standards. Replace them with positive affirmations that celebrate your body.
+                </li>
+                <li>
+                    Focus on Health, Not Just Appearance: Shift your focus from how your body looks to how it feels. Engage in activities that make you feel good, like exercise, which boosts endorphins and improves mood.
+                </li>
+                <li>
+                    Limit Exposure to Toxic Media: Be mindful of the media you consume. Unfollow social media accounts that make you feel inadequate and seek out content that promotes body positivity and diversity.
+                </li>
+            </ol>
+        </div>
+        </p>
+        <div class="img7">
+            <img src="images/img7.jpeg"/>
+        </div>
+        <div class="center_title">
+            Send us a letter! Share your concerns and let our community support you!
+        </div>
+        <div class="form_con">
+            <label>Name</label>
+            <input type="text" placeholder="Name" class="Name">
+            <label>Email</label>
+            <input type="email" placeholder="Email" class="Email">
+            <label>Address</label>
+            <input type="text" placeholder="Address" class="Address">
+            <label>Message</label>
+            <textarea placeholder="Message" class="Message"></textarea>
+            <button class="submit">SUBMIT</button>
+        </div>
+        <div class="form_img">
+            <div><img src="images/10.png"/></div>
+            <div><img src="images/11.png"/></div>
+        </div>
+    </div>
+</div>
+<footer>
+    IaMe: Only be yourself
+</footer>
+<script>
+    let Name = document.querySelector(".Name")
+    let Email = document.querySelector(".Email")
+    let Address = document.querySelector(".Address")
+    let Message = document.querySelector(".Message")
+    let submit = document.querySelector(".submit")
+    submit.onclick = function () {
+        if(Name.value == '' || Email.value == '' || Address.value == '' || Message.value == ''){
+            return alert('Please fill in the information completely')
+        }
+        let reg = /^[a-zA-Z0-9]+([-_.][A-Za-zd]+)*@([a-zA-Z0-9]+[-.])+[A-Za-zd]{2,5}$/
+        if(!reg.test(Email.value)){
+            return alert('Please check the email format')
+        }
+        alert('Submitted successfully!')
+        return location.reload()
+    }
+</script>
+</body>
+</html>
